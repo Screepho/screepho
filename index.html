@@ -1,1462 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Screepho</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
 
-    <!-- plugin scripts -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,600,700&display=swap"
-      rel="stylesheet"
-    />
+  <title>Screepho</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <link rel="stylesheet" href="assets/css/gilroy-extrabold.css" />
-    <link rel="stylesheet" href="assets/css/gilroy-light.css" />
-    <link rel="stylesheet" href="assets/css/gilroy-semibold.css" />
-    <link rel="stylesheet" href="assets/css/gilroy-bold.css" />
+  <link href="assets/img/favicon.png" rel="icon">
 
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <body>
-    <div class="preloader">
-      <img src="assets/images/loader.png" class="preloader__image" alt="" />
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    <!-- /.preloader -->
-    <div class="page-wrapper">
-      <header class="site-header-one">
-        <nav class="main-nav__one stricky">
-          <div class="container-fluid">
-            <div class="main-nav__logo-box">
-              <a href="index.html">
-                <img src="assets/images/logo-full-light.png" alt="" />
-              </a>
-              <a href="#" class="side-menu__toggler"
-                ><i class="fa fa-bars"></i
-              ></a>
-            </div>
-            <!-- /.main-nav__logo-box -->
-            <div class="main-nav__main-navigation">
-              <ul class="main-nav__navigation-box">
-                <li>
-                  <a href="/">Home</a>
-                  <!-- /.sub-menu -->
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="services.html">Services</a>
-                  <!-- /.sub-menu -->
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.main-nav__main-navigation -->
-            <div class="main-nav__right">
-              <a href="tel:+812-456-789-99" class="main-nav__phone"
-                ><i class="far fa-phone"></i>+962 78 58 368 23</a
-              >
-              <a href="contact.html" class="thm-btn"
-                >Contact us <i class="fa fa-angle-right"></i
-              ></a>
-              <!-- /.thm-btn -->
-            </div>
-            <!-- /.main-nav__right -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-        <!-- /.main-nav__one -->
-      </header>
-      <!-- /.site-header-one -->
+  </header>
+  <!-- #header -->
 
-      <section
-        class="banner-one"
-        style="
-          background-image: url(assets/images/backgrounds/banner-bg-1-1.png);
-        "
-      >
-        <img
-          src="assets/images/resources/banner-1-1.png"
-          alt=""
-          class="banner-one__moc"
-        />
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="banner-one__content">
-                <h3>
-                  <span>Unveil Innovation </span> <br />Crafting Success for
-                  Your
-                  <br />
-                  <em>Enterprise</em>
-                </h3>
-                <p>Your Expert Partner in Software Development</p>
-                <a href="#" class="thm-btn banner-one__btn"
-                  >Contact us <i class="fa fa-angle-double-right"></i></a
-                ><!-- /.thm-btn -->
-              </div>
-              <!-- /.banner-one__content -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/hero-img.svg" alt="" class="img-fluid">
+      </div>
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
         </div>
-        <!-- /.container-fluid -->
-      </section>
-      <!-- /.banner-one -->
+      </div>
 
-      <section class="brand-one">
-        <div class="container">
-          <div
-            class="brand-one__carousel owl-carousel owl-theme thm__owl-carousel"
-            data-options='{"loop": true, "autoplay": true, "autoplayTimeout": 5000, "items": 6, "margin": 150, "smartSpeed": 700, "nav": false, "dots": false, "responsive": { "0": { "items": 2, "margin": 15 },"575": { "items": 3, "margin": 30 },"767": { "items": 3, "margin": 30 }, "991": { "items": 4, "margin": 30 }, "1199": { "items": 4, "margin": 75 }, "1200": { "items": 6 } }}'
-          >
-            <div class="item">
-              <img src="assets/images/brand/brand-1-1.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-2.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-3.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-4.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-5.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-6.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-1.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-2.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-3.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-4.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-5.png" alt="" />
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <img src="assets/images/brand/brand-1-6.png" alt="" />
-            </div>
-            <!-- /.item -->
-          </div>
-          <!-- /.brand-one__carousel owl-carousel owl-theme thm__owl-carousel -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.brand-one -->
+    </div>
+  </section><!-- End Hero Section -->
 
-      <section class="service-one">
-        <div class="container">
-          <div class="block-title text-center">
-            <p><span>Why Like Us</span></p>
-            <h3>
-              Fuel Your Business's Triumph <br />
-              Through Our Esteemed Software Development Agency
-            </h3>
-            <div class="block-title__line"></div>
-            <!-- /.block-title__line -->
-          </div>
-          <!-- /.block-title -->
-          <div class="row high-gutter">
-            <div class="col-lg-4">
-              <div class="service-one__single">
-                <div class="service-one__top">
-                  <div class="service-one__icon">
-                    <img src="assets/images/shapes/service-i-1.png" alt="" />
-                  </div>
-                  <!-- /.service-one__icon -->
-                  <div class="service-one__top-content">
-                    <h3>Business Strategy & Market Research</h3>
-                    <p>Improve Business</p>
-                  </div>
-                  <!-- /.service-one__top-content -->
-                </div>
-                <!-- /.service-one__top -->
-                <p>
-                  Embrace a world of possibilities as we explore cutting-edge
-                  solutions, transcending limits and igniting success.
-                </p>
-              </div>
-              <!-- /.service-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="service-one__single">
-                <div class="service-one__top">
-                  <div class="service-one__icon">
-                    <img src="assets/images/shapes/service-i-2.png" alt="" />
-                  </div>
-                  <!-- /.service-one__icon -->
-                  <div class="service-one__top-content">
-                    <h3>SEO, PPC & Social Media Solution</h3>
-                    <p>SEO Optimization</p>
-                  </div>
-                  <!-- /.service-one__top-content -->
-                </div>
-                <!-- /.service-one__top -->
-                <p>
-                  Harness the power of SEO, PPC, and social media to elevate
-                  your online presence, amplify engagement, and drive unrivaled
-                  growth.
-                </p>
-              </div>
-              <!-- /.service-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="service-one__single">
-                <div class="service-one__top">
-                  <div class="service-one__icon">
-                    <img src="assets/images/shapes/service-i-3.png" alt="" />
-                  </div>
-                  <!-- /.service-one__icon -->
-                  <div class="service-one__top-content">
-                    <h3><a href="#">Web Design And Development</a></h3>
-                    <p>Web Solutions</p>
-                  </div>
-                  <!-- /.service-one__top-content -->
-                </div>
-                <!-- /.service-one__top -->
-                <p>
-                  Seamlessly blend creativity and functionality with our
-                  exceptional web design and development services, bringing your
-                  vision to life on the virtual canvas.
-                </p>
-              </div>
-              <!-- /.service-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.service-one -->
+  <main id="main">
 
-      <section class="about-one">
-        <div class="container">
-          <img
-            src="assets/images/resources/cta-1-1.png"
-            alt=""
-            class="about-one__moc"
-          />
-          <div class="row justify-content-end">
-            <div class="col-lg-6">
-              <div class="about-one__content">
-                <div class="block-title text-left">
-                  <p><span>About Us</span></p>
-                  <h3>
-                    We Are Specialized In <br />
-                    Software Solution
-                  </h3>
-                  <div class="block-title__line"></div>
-                  <!-- /.block-title__line -->
-                </div>
-                <!-- /.block-title -->
-                <p>
-                  Harness our specialized expertise in software solutions to
-                  streamline your business processes, optimize efficiency, and
-                  unlock new opportunities for growth. Our dedicated team brings
-                  innovative ideas to life, creating tailored software that
-                  aligns seamlessly with your unique needs and objectives. Let
-                  us be your partner in driving technological advancement and
-                  achieving lasting success.
-                </p>
-                <a href="$" class="thm-btn about-one__btn"
-                  >Contact us <i class="fa fa-angle-double-right"></i
-                ></a>
-                <!-- /.thm-btn -->
-              </div>
-              <!-- /.about-one__content -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.about-one -->
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
 
-      <section class="about-two">
-        <img
-          src="assets/images/shapes/about-two-bg.png"
-          alt=""
-          class="about-two__bg"
-        />
-        <div class="container">
-          <img
-            src="assets/images/resources/cta-2-1.png"
-            alt=""
-            class="about-two__moc"
-          />
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-two__content">
-                <div class="block-title text-left">
-                  <p><span>What We Do</span></p>
-                  <h3>
-                    We Offer Best Solution <br />
-                    For Your Business
-                  </h3>
-                  <div class="block-title__line"></div>
-                  <!-- /.block-title__line -->
-                </div>
-                <!-- /.block-title -->
-                <p>
-                  Discover the pinnacle of excellence as we provide top-tier
-                  solutions tailored to enhance your business. Whether it's
-                  crafting dynamic websites, robust web applications, or
-                  cutting-edge mobile applications, we're your dedicated
-                  architects of success. Let us transform your visions into
-                  reality and propel your business to new heights.
-                </p>
-                <div class="about-two__box">
-                  <div class="about-two__box-icon">
-                    <i class="far fa-leaf"></i>
-                  </div>
-                  <!-- /.about-two__box-icon -->
-                  <div class="about-two__box-content">
-                    <h3>Manage Your Project</h3>
-                    <p>
-                      Simplify and streamline your project management experience
-                      with our expert solutions. From inception to completion,
-                      we provide the tools and expertise you need to effectively
-                      plan, execute, and successfully accomplish your projects.
-                      Stay in control, stay organized, and achieve your project
-                      goals with confidence.
-                    </p>
-                  </div>
-                  <!-- /.about-two__box-content -->
-                </div>
-                <!-- /.about-two__box -->
-                <div class="about-two__box">
-                  <div class="about-two__box-icon">
-                    <i class="far fa-laptop-code"></i>
-                  </div>
-                  <!-- /.about-two__box-icon -->
-                  <div class="about-two__box-content">
-                    <h3>Business & Data Analytics</h3>
-                    <p>
-                      Consectetur adipisicing elit sed eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </p>
-                  </div>
-                  <!-- /.about-two__box-content -->
-                </div>
-                <!-- /.about-two__box -->
-              </div>
-              <!-- /.about-two__content -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.about-two -->
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
 
-      <section class="team-one">
-        <div class="container">
-          <div class="block-title text-center">
-            <p><span>Our Team</span></p>
-            <h3>
-              Meet Our Exclusive <br />
-              Team Member
-            </h3>
-            <div class="block-title__line"></div>
-            <!-- /.block-title__line -->
-          </div>
-          <!-- /.block-title -->
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="team-one__single">
-                <div class="team-one__image">
-                  <img src="assets/images/team/team-1-1.jpg" alt="" />
-                </div>
-                <!-- /.team-one__image -->
-                <div class="team-one__content">
-                  <div class="team-one__social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </div>
-                  <!-- /.team-one__social -->
-                  <h3>Ricardo Torres</h3>
-                  <p>Web designer</p>
-                </div>
-                <!-- /.team-one__content -->
-              </div>
-              <!-- /.team-one__single -->
-            </div>
-            <!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="team-one__single">
-                <div class="team-one__image">
-                  <img src="assets/images/team/team-1-2.jpg" alt="" />
-                </div>
-                <!-- /.team-one__image -->
-                <div class="team-one__content">
-                  <div class="team-one__social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </div>
-                  <!-- /.team-one__social -->
-                  <h3>Paul Sanchez</h3>
-                  <p>Web designer</p>
-                </div>
-                <!-- /.team-one__content -->
-              </div>
-              <!-- /.team-one__single -->
-            </div>
-            <!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="team-one__single">
-                <div class="team-one__image">
-                  <img src="assets/images/team/team-1-3.jpg" alt="" />
-                </div>
-                <!-- /.team-one__image -->
-                <div class="team-one__content">
-                  <div class="team-one__social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </div>
-                  <!-- /.team-one__social -->
-                  <h3>Herbert Waters</h3>
-                  <p>Web designer</p>
-                </div>
-                <!-- /.team-one__content -->
-              </div>
-              <!-- /.team-one__single -->
-            </div>
-            <!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="team-one__single">
-                <div class="team-one__image">
-                  <img src="assets/images/team/team-1-4.jpg" alt="" />
-                </div>
-                <!-- /.team-one__image -->
-                <div class="team-one__content">
-                  <div class="team-one__social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </div>
-                  <!-- /.team-one__social -->
-                  <h3>Jeremy Harrington</h3>
-                  <p>Web designer</p>
-                </div>
-                <!-- /.team-one__content -->
-              </div>
-              <!-- /.team-one__single -->
-            </div>
-            <!-- /.col-lg-3 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.team-one -->
+        <div class="row about-container">
 
-      <section class="progress-one">
-        <img
-          src="assets/images/shapes/progress-bg-1.png"
-          alt=""
-          class="progress-one__bg"
-        />
-        <div class="container">
-          <img
-            src="assets/images/resources/progress-1-1.png"
-            alt=""
-            class="progress-one__moc"
-          />
-          <div class="row justify-content-end">
-            <div class="col-lg-6">
-              <div class="progress-one__content">
-                <div class="block-title text-left">
-                  <p><span>Our Skills</span></p>
-                  <h3>
-                    know Everything About <br />
-                    Professional Skills
-                  </h3>
-                  <div class="block-title__line"></div>
-                  <!-- /.block-title__line -->
-                </div>
-                <!-- /.block-title -->
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                  eiusmod tempor incid idunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
-                </p>
-
-                <div class="progress-one__progress-wrap">
-                  <div class="progress-one__progress__bar">
-                    <div class="progress-one__progress__bar-top">
-                      <h3>Business Strategy</h3>
-                    </div>
-                    <!-- /.progress-one__progress__bar-top -->
-                    <div class="progress-one__progress__bar-line">
-                      <span
-                        class="wow fadeIn"
-                        data-wow-duration="1500ms"
-                        style="width: 95%; background-color: #3f02a8"
-                      >
-                        <b>95%</b></span
-                      >
-                    </div>
-                    <!-- /.progress-one__progress__bar-line -->
-                  </div>
-                  <!-- /.progress-one__progress__bar -->
-                  <div class="progress-one__progress__bar">
-                    <div class="progress-one__progress__bar-top">
-                      <h3>SEO Optimization</h3>
-                    </div>
-                    <!-- /.progress-one__progress__bar-top -->
-                    <div class="progress-one__progress__bar-line">
-                      <span
-                        class="wow fadeIn"
-                        data-wow-duration="1500ms"
-                        style="width: 87%; background-color: #ff57a4"
-                      >
-                        <b>87%</b></span
-                      >
-                    </div>
-                    <!-- /.progress-one__progress__bar-line -->
-                  </div>
-                  <!-- /.progress-one__progress__bar -->
-                  <div class="progress-one__progress__bar">
-                    <div class="progress-one__progress__bar-top">
-                      <h3>Social Media Marketing</h3>
-                    </div>
-                    <!-- /.progress-one__progress__bar-top -->
-                    <div class="progress-one__progress__bar-line">
-                      <span
-                        class="wow fadeIn"
-                        data-wow-duration="1500ms"
-                        style="width: 63%; background-color: #00c8b3"
-                      >
-                        <b>63%</b></span
-                      >
-                    </div>
-                    <!-- /.progress-one__progress__bar-line -->
-                  </div>
-                  <!-- /.progress-one__progress__bar -->
-                  <div class="progress-one__progress__bar">
-                    <div class="progress-one__progress__bar-top">
-                      <h3>Web Development</h3>
-                    </div>
-                    <!-- /.progress-one__progress__bar-top -->
-                    <div class="progress-one__progress__bar-line">
-                      <span
-                        class="wow fadeIn"
-                        data-wow-duration="1500ms"
-                        style="width: 55%; background-color: #ff9b0d"
-                      >
-                        <b>55%</b></span
-                      >
-                    </div>
-                    <!-- /.progress-one__progress__bar-line -->
-                  </div>
-                  <!-- /.progress-one__progress__bar -->
-                </div>
-                <!-- /.progress-one__progress-wrap -->
-              </div>
-              <!-- /.progress-one__content -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row justify-content-end -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.progress-one -->
-
-      <section class="portfolio-one">
-        <div class="container">
-          <div class="block-title text-center">
-            <p><span>Our Project</span></p>
-            <h3>
-              Let’s See Our Populer <br />
-              Project
-            </h3>
-            <div class="block-title__line"></div>
-            <!-- /.block-title__line -->
-          </div>
-          <!-- /.block-title -->
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="portfolio-one__single">
-                <img src="assets/images/portfolio/portfolio-1-1.jpg" alt="" />
-                <div class="portfolio-one__content">
-                  <div class="portfolio-one__content-inner">
-                    <h3><a href="portfolio-details.html">Creative Arts</a></h3>
-                    <p>Design, Branding</p>
-                  </div>
-                  <!-- /.portfolio-one__content-inner -->
-                </div>
-                <!-- /.portfolio-one__content -->
-              </div>
-              <!-- /.portfolio-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="portfolio-one__single">
-                <img src="assets/images/portfolio/portfolio-1-2.jpg" alt="" />
-                <div class="portfolio-one__content">
-                  <div class="portfolio-one__content-inner">
-                    <h3><a href="portfolio-details.html">Creative Arts</a></h3>
-                    <p>Design, Branding</p>
-                  </div>
-                  <!-- /.portfolio-one__content-inner -->
-                </div>
-                <!-- /.portfolio-one__content -->
-              </div>
-              <!-- /.portfolio-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="portfolio-one__single">
-                <img src="assets/images/portfolio/portfolio-1-3.jpg" alt="" />
-                <div class="portfolio-one__content">
-                  <div class="portfolio-one__content-inner">
-                    <h3><a href="portfolio-details.html">Creative Arts</a></h3>
-                    <p>Design, Branding</p>
-                  </div>
-                  <!-- /.portfolio-one__content-inner -->
-                </div>
-                <!-- /.portfolio-one__content -->
-              </div>
-              <!-- /.portfolio-one__single -->
-            </div>
-            <!-- /.col-lg-4 -->
-          </div>
-          <!-- /.row -->
-          <div class="portfolio-one__more-btn__block text-center">
-            <a
-              href="portfolio-full.html"
-              class="thm-btn portfolio-one__more-btn"
-              >View More <i class="fa fa-angle-double-right"></i
-            ></a>
-            <!-- /.thm-btn -->
-          </div>
-          <!-- /.portfolio-one__more-btn__block -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.portfolio-one -->
-
-      <section class="funfact-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="funfact-one__single">
-                <div class="funfact-one__icon">
-                  <i class="far fa-mug-hot"></i>
-                </div>
-                <!-- /.funfact-one__icon -->
-                <h3>
-                  <span class="counter">2500</span
-                  ><!-- /.counter -->+
-                </h3>
-                <p>Project</p>
-              </div>
-              <!-- /.funfact-one__single -->
-            </div>
-            <!-- /.col-lg-3 col-md-6 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="funfact-one__single">
-                <div class="funfact-one__icon">
-                  <i class="far fa-heart"></i>
-                </div>
-                <!-- /.funfact-one__icon -->
-                <h3>
-                  <span class="counter">2960</span
-                  ><!-- /.counter -->+
-                </h3>
-                <p>Satisfied Clients</p>
-              </div>
-              <!-- /.funfact-one__single -->
-            </div>
-            <!-- /.col-lg-3 col-md-6 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="funfact-one__single">
-                <div class="funfact-one__icon">
-                  <i class="far fa-award"></i>
-                </div>
-                <!-- /.funfact-one__icon -->
-                <h3>
-                  <span class="counter">5620</span
-                  ><!-- /.counter -->
-                </h3>
-                <p>Win Awards</p>
-              </div>
-              <!-- /.funfact-one__single -->
-            </div>
-            <!-- /.col-lg-3 col-md-6 -->
-            <div class="col-lg-3 col-md-6">
-              <div class="funfact-one__single">
-                <div class="funfact-one__icon">
-                  <i class="far fa-user-alt"></i>
-                </div>
-                <!-- /.funfact-one__icon -->
-                <h3>
-                  <span class="counter">365</span
-                  ><!-- /.counter -->+
-                </h3>
-                <p>Team Member</p>
-              </div>
-              <!-- /.funfact-one__single -->
-            </div>
-            <!-- /.col-lg-3 col-md-6 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.funfact-one -->
-
-      <section class="testimonials-one">
-        <div class="container">
-          <div class="testimonials-one__top">
-            <div class="block-title text-left">
-              <p><span>Clients Say</span></p>
-              <h3>
-                know Everything About <br />
-                Professional Skills
-              </h3>
-              <div class="block-title__line"></div>
-              <!-- /.block-title__line -->
-            </div>
-            <!-- /.block-title -->
-            <div class="testimonials-one__carousel-btn__wrap">
-              <a href="#" class="testimonials-one__carousel-btn-left"
-                ><i class="fa fa-angle-double-left"></i
-              ></a>
-              <a href="#" class="testimonials-one__carousel-btn-right"
-                ><i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-            <!-- /.testimonials-one__carousel-btn__wrap -->
-          </div>
-          <!-- /.testimonials-one__top -->
-
-          <div class="testimonials-one__arrow-decor-wrap">
-            <i class="fa fa-angle-right"></i>
-            <i class="fa fa-angle-right"></i>
-            <i class="fa fa-angle-right"></i>
-            <i class="fa fa-angle-right"></i>
-          </div>
-          <!-- /.testimonials-one__arrow-decor-wrap -->
-
-          <div
-            class="testimonials-one__carousel owl-carousel thm__owl-carousel owl-theme"
-            data-carousel-prev-btn=".testimonials-one__carousel-btn-left"
-            data-carousel-next-btn=".testimonials-one__carousel-btn-right"
-            data-options='{"loop": true, "margin": 65, "stagePadding": 50, "items": 3, "smartSpeed": 700, "autoplay": true, "autoplayTimeout": 7000, "nav": false, "dots": false, "responsive": { "0": { "items": 1, "stagePadding": 20 }, "1199": { "items": 2 }, "1200": { "items": 3 } }}'
-          >
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Pearl Campbell</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Landon Anderson</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Daniel Howell</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Jay Houston</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Austin Houston</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Myrtie Wise</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Ronald Sharp</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Sophia Zimmerman</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="testimonials-one__single">
-                <div class="testimonials-one__image">
-                  <img
-                    src="assets/images/testimonials/testimonial-1-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <!-- /.testimonials-one__image -->
-                <div class="testimonials-one__content">
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiumod tempor incididunt ut labore e dolore magna
-                    aliqua. Ut enim ad miveniam quis nostrud exercitation
-                  </p>
-                  <h3>Chester Ortiz</h3>
-                  <span>CEO & Founder</span>
-                  <i class="fa fa-quote-right testimonials-one__qoute-icon"></i>
-                </div>
-                <!-- /.testimonials-one__content -->
-              </div>
-              <!-- /.testimonials-one__single -->
-            </div>
-            <!-- /.item -->
-          </div>
-          <!-- /.testimonials-one__carousel owl-carousel thm__owl-carousel owl-theme -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.testimonials-one -->
-
-      <section class="cta-one">
-        <div class="container">
-          <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
-            <div class="cta-one__left">
-              <h3>Build Your Business</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor
-              </p>
-            </div>
-            <!-- /.cta-one__left -->
-            <div class="cta-one__right">
-              <a href="#" class="thm-btn cta-one__btn"
-                >Contact Us <i class="fa fa-angle-double-right"></i
-              ></a>
-              <!-- /.thm-btn cta-one__btn -->
-            </div>
-            <!-- /.cta-one__right -->
-          </div>
-          <!-- /.inner-container -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.cta-one -->
-
-      <section class="blog-one">
-        <div class="container-fluid">
-          <div class="blog-one__left">
-            <div class="block-title text-left">
-              <p><span>Our Blog</span></p>
-              <h3>
-                Reads Our Latest <br />
-                News & Blog
-              </h3>
-              <div class="block-title__line"></div>
-              <!-- /.block-title__line -->
-            </div>
-            <!-- /.block-title -->
+          <div class="col-lg-6 content order-lg-1 order-2">
             <p>
-              But we ipsum dolor sit amet consectetur adipisicing elit sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="blog-one__carousel-btn__wrap">
-              <a href="#" class="blog-one__carousel-btn-left"
-                ><i class="fa fa-angle-double-left"></i
-              ></a>
-              <a href="#" class="blog-one__carousel-btn-right"
-                ><i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-            <!-- /.blog-one__carousel-btn__wrap -->
-          </div>
-          <!-- /.blog-one__left -->
-          <div class="blog-one__right">
-            <div
-              class="blog-one__carousel owl-carousel owl-theme thm__owl-carousel"
-              data-carousel-prev-btn=".blog-one__carousel-btn-left"
-              data-carousel-next-btn=".blog-one__carousel-btn-right"
-              data-options='{"loop": true, "margin": 30, "stagePadding": 0, "items": 3, "smartSpeed": 700, "autoplay": true, "autoplayTimeout": 7000, "nav": false, "dots": false, "responsive": { "0": { "items": 1 }, "991": { "items": 2 }, "1200": { "items": 3 } }}'
-            >
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-1.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-1.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Adobe Experience Manager vs. WordPress The Authoring
-                        Expeene Compared</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-2.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-2.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Understanding API Based form Guide For Product Managers
-                        Are Programs Ways</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-3.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-1.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Monthly Web Development Update Rethinking Habits And
-                        Finding Custom Solutions</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-3.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-1.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Adobe Experience Manager vs. WordPress The Authoring
-                        Expeene Compared</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-2.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-2.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Understanding API Based form Guide For Product Managers
-                        Are Programs Ways</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-              <div class="item">
-                <div class="blog-one__single">
-                  <div class="blog-one__image">
-                    <img src="assets/images/blog/blog-1-3.jpg" alt="" />
-                  </div>
-                  <!-- /.blog-one__image -->
-                  <div class="blog-one__content">
-                    <div class="blog-one__author">
-                      <img
-                        src="assets/images/blog/blog-author-1-1.jpg"
-                        alt=""
-                      />
-                      <p>Hakila K. Dolika</p>
-                    </div>
-                    <!-- /.blog-one__author -->
-                    <h3>
-                      <a href="blog-details.html"
-                        >Monthly Web Development Update Rethinking Habits And
-                        Finding Custom Solutions</a
-                      >
-                    </h3>
-                    <a href="#" class="thm-btn blog-one__btn"
-                      >Read More <i class="fa fa-angle-double-right"></i></a
-                    ><!-- /.thm-btn -->
-                  </div>
-                  <!-- /.blog-one__content -->
-                </div>
-                <!-- /.blog-one__single -->
-              </div>
-              <!-- /.item -->
-            </div>
-            <!-- /.blog-one__carousel owl-carousel owl-theme thm__owl-carousel -->
-          </div>
-          <!-- /.blog-one__right -->
-        </div>
-        <!-- /.container-fluid -->
-      </section>
-      <!-- /.blog-one -->
 
-      <footer class="site-footer-one">
-        <div class="site-footer-one__upper">
-          <div class="container">
-            <img
-              src="assets/images/resources/footer-1-1.png"
-              alt=""
-              class="site-footer-one__upper-moc"
-            />
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/about-extra-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+            <p>
+              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+            </p>
+            <p>
+              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="assets/img/about-extra-2.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
+            <p>
+              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+            </p>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Services</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-brightness-high" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-calendar4-week" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="bi bi-calendar4-week"></i>
+              <div class="card-body">
+                <h5 class="card-title">Corporis dolorem</h5>
+                <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="bi bi-camera-reels"></i>
+              <div class="card-body">
+                <h5 class="card-title">Voluptates dolores</h5>
+                <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="bi bi-chat-square-text"></i>
+              <div class="card-body">
+                <h5 class="card-title">Eum ut aspernatur</h5>
+                <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Portfolio</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 1</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" title="App 1" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 3</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 2</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="assets/img/portfolio/app2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 2</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 2</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 3</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="assets/img/portfolio/app3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 1</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card1.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 3</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 1</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web1.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="section-bg">
+      <div class="container" data-aso="zoom-in">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
+                    <h3>Saul Goodman</h3>
+                    <h4>Ceo &amp; Founder</h4>
+                    <p>
+                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
+                    <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                    <p>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
+                    <h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4>
+                    <p>
+                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
+                    <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                    <p>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
+                    <h3>John Larson</h3>
+                    <h4>Entrepreneur</h4>
+                    <p>
+                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Our CLients</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
+        </div>
+
+        <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="map mb-4 mb-lg-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 340px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
             <div class="row">
-              <div class="col-lg-3">
-                <div class="footer-widget footer-widget__about">
-                  <a href="index.html">
-                    <img src="assets/images/logo-dark.png" alt="" />
-                  </a>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    do eiusmod
-                  </p>
-                  <form action="#" class="footer__mc-form">
-                    <input type="text" placeholder="Enter Your Email" />
-                    <button type="submit">
-                      <i class="fa fa-long-arrow-alt-right"></i>
-                    </button>
-                  </form>
-                  <!-- /.footer__mc-form -->
-                  <div class="footer-widget__social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </div>
-                  <!-- /.footer-widget__social -->
-                </div>
-                <!-- /.footer-widget -->
+              <div class="col-md-5 info">
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street, NY 535022</p>
               </div>
-              <!-- /.col-lg-3 -->
-              <div class="col-lg-4">
-                <div class="footer-widget footer-widget__contact">
-                  <h3 class="footer-widget__title">Official Address</h3>
-                  <!-- /.footer-widget__title -->
-                  <div class="footer-widget__contact-box">
-                    <div class="footer-widget__contact-top">
-                      <i class="far fa-map-marked"></i>
-                      <h3>Address</h3>
-                    </div>
-                    <!-- /.footer-widget__contact-top -->
-                    <p>205, Khola Street Name, New York, USA</p>
-                  </div>
-                  <!-- /.footer-widget__contact-box -->
-                  <div class="footer-widget__contact-box">
-                    <div class="footer-widget__contact-top">
-                      <i class="far fa-phone"></i>
-                      <h3>Phone</h3>
-                    </div>
-                    <!-- /.footer-widget__contact-top -->
-                    <p><a href="tel:+82-123-456-89">+82 123 456 89</a></p>
-                  </div>
-                  <!-- /.footer-widget__contact-box -->
-                </div>
-                <!-- /.footer-widget footer-widget__contact -->
+              <div class="col-md-4 info">
+                <i class="bi bi-envelope"></i>
+                <p>info@example.com</p>
               </div>
-              <!-- /.col-lg-4 -->
+              <div class="col-md-3 info">
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55</p>
+              </div>
             </div>
-            <!-- /.row -->
+
+            <div class="form">
+              <form action="" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
           </div>
-          <!-- /.container -->
+
         </div>
-        <!-- /.site-footer-one__upper -->
-        <div class="site-footer-one__bottom">
-          <div class="container">
-            <div class="site-footer-one__bottom-line"></div>
-            <!-- /.site-footer-one__bottom-line -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Screepho</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
             <p>
-              Copy@2020 <a href="#">Bizkar</a>. All Right Reserved.Design By
-              LayerDrops.
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
             </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
           </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.site-footer-one__bottom -->
-      </footer>
-      <!-- /.site-footer-one -->
-    </div>
-    <!-- /.page-wrapper -->
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"
-      ><i class="fa fa-angle-up"></i
-    ></a>
-
-    <div class="side-menu__block">
-      <div class="side-menu__block-overlay custom-cursor__overlay">
-        <div class="cursor"></div>
-        <div class="cursor-follower"></div>
-      </div>
-      <!-- /.side-menu__block-overlay -->
-      <div class="side-menu__block-inner">
-        <div class="side-menu__top justify-content-end">
-          <a href="#" class="side-menu__toggler side-menu__close-btn"
-            ><img src="assets/images/shapes/close-1-1.png" alt=""
-          /></a>
-        </div>
-        <!-- /.side-menu__top -->
-
-        <nav class="mobile-nav__container">
-          <!-- content is loading via js -->
-        </nav>
-        <div class="side-menu__sep"></div>
-        <!-- /.side-menu__sep -->
-        <div class="side-menu__content">
-          <p>
-            Lorem Ipsum is simply dummy text the printing and setting industry.
-            Lorm Ipsum has been the industry's stanard dummy text ever.
-          </p>
-          <p>
-            <a href="mailto:needhelp@bizkar.com">needhelp@bizkar.com</a> <br />
-            <a href="tel:888-999-0000">888 999 0000</a>
-          </p>
-          <div class="side-menu__social">
-            <a class="fab fa-facebook-f" href="#"></a>
-            <a class="fab fa-twitter" href="#"></a>
-            <a class="fab fa-instagram" href="#"></a>
-            <a class="fab fa-pinterest-p" href="#"></a>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
           </div>
+
         </div>
-        <!-- /.side-menu__content -->
       </div>
-      <!-- /.side-menu__block-inner -->
     </div>
-    <!-- /.side-menu__block -->
 
-    <div class="search-popup" style="display: none">
-      <div class="search-popup__overlay custom-cursor__overlay">
-        <div class="cursor"></div>
-        <div class="cursor-follower"></div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Screepho</strong>. All Rights Reserved
       </div>
-      <!-- /.search-popup__overlay -->
-      <div class="search-popup__inner">
-        <form action="#" class="search-popup__form">
-          <input
-            type="text"
-            name="search"
-            placeholder="Type here to Search...."
-          />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-      <!-- /.search-popup__inner -->
     </div>
-    <!-- /.search-popup -->
+  </footer><!-- End Footer -->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/TweenMax.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/js/bootstrap-datepicker.min.js"></script>
-    <script src="assets/js/isotope.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- template scripts -->
-    <script src="assets/js/theme.js"></script>
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
