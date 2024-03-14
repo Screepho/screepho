@@ -9,6 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js 12.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.11.1'
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
