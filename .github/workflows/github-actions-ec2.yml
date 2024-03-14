@@ -24,4 +24,4 @@ jobs:
           REMOTE_USER: "ubuntu"
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           SOURCE: "."  # Path to the source files in your repository
-          TARGET: "/var/www/html/screepho"  # Destination directory on EC2 instance
+          TARGET: "sudo /var/www/html/screepho"  # Destination directory on EC2 instance
