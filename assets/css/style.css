@@ -653,12 +653,12 @@ section {
 
 #services .icon {
   position: absolute;
-  left: -15px;
-  top: calc(50% - 32px);
+  right: 1rem;
+  top: 1rem;
 }
 
 #services .icon i {
-  font-size: 64px;
+  font-size: 50px;
   line-height: 0;
   transition: 0.5s;
 }
